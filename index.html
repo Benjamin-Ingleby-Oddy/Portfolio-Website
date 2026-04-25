@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Portfolio</title>
+    <meta name="description" content="Portfolio of a Cybersecurity Student - Projects, Reports, Links, and Skills.">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <canvas id="particles-bg"></canvas>
+
+    <div class="split-layout">
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="nav-brand"><span>usr</span>@root</div>
+                <button id="theme-toggle" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+                    <!-- SVG injected by JS -->
+                </button>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li><a href="#about" class="active" data-target="about">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        About Me
+                    </a></li>
+                <li><a href="#skills" data-target="skills">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 16 4-4-4-4"></path>
+                            <path d="m6 8-4 4 4 4"></path>
+                            <path d="m14.5 4-5 16"></path>
+                        </svg>
+                        Skills & Tools
+                    </a></li>
+                <li><a href="#projects" data-target="projects">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2-2H5a2 2 0 0 0-2 2Z">
+                            </path>
+                        </svg>
+                        Projects
+                    </a></li>
+                <li><a href="#events" data-target="events">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Events Log
+                    </a></li>
+                <li><a href="#contact" data-target="contact">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Contact
+                    </a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <p class="mono-accent">&copy; 2026 Benjamin Ingleby-Oddy<br>Segment Faults Expected</p>
+            </div>
+        </aside>
+
+        <!-- Right Content Area -->
+        <main class="content-area glass-block">
+
+            <!-- Hero / About Section -->
+            <section id="about" class="content-section active-section">
+                <div class="hero-content">
+                    <p class="mono-accent">// Hello World</p>
+                    <h1 class="title">Benjamin Ingleby-Oddy</h1>
+                    <h2 class="subtitle">DEVELOPER | ENGINEER | STUDENT OF CYBER SECURITY</h2>
+                    <p class="bio" style="font-size:0.95rem; margin-bottom: 0.8rem;">Benjamin is a Developer and
+                        Engineer reading Applied Cyber Security at the University of South Wales, currently maintaining
+                        a predicted 1:1. His professional methodology emphasizes the transition from theoretical
+                        governance to the implementation of high-integrity, user-centric architectures. Proficient in
+                        HTML, CSS, and JavaScript, he specializes in resilient frontend delivery and the application of
+                        progressive enhancement principles.</p>
+                    <p class="bio" style="font-size:0.95rem;">His experience includes leading multidisciplinary teams
+                        within Agile frameworks to deliver real-time data visualization platforms and secure-by-design
+                        issue-tracking ecosystems. Driven by a "Policy-to-Failure" testing mindset, he bridges the gap
+                        between complex solution architecture and granular user requirements, ensuring that digital
+                        services are both accessible and structurally sound.</p>
+
+                    <div class="link-tree mt-4">
+                        <a href="https://github.com/Benjamin-Ingleby-Oddy" target="_blank"
+                            class="btn sharp-btn">GitHub</a>
+                        <a href="https://www.linkedin.com/in/benjamin-ingleby-oddy/" target="_blank"
+                            class="btn sharp-btn">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills and Tools Matrix -->
+            <section id="skills" class="content-section">
+                <h2 class="section-title">Skills & Competencies</h2>
+                <div class="matrix-grid">
+                    <div class="card matrix-card">
+                        <h3 class="card-title">Lifecycle & Methodology</h3>
+                        <ul class="mono-list">
+                            <li>RAPID & AGILE lifecycle development</li>
+                            <li>Information Management & OSINT</li>
+                            <li>PERSEC & Documentation compliance</li>
+                            <li>Large team communication & cohesion</li>
+                        </ul>
+                    </div>
+                    <div class="card matrix-card">
+                        <h3 class="card-title">Security & Architecture</h3>
+                        <ul class="mono-list">
+                            <li>Defensive engineering framework</li>
+                            <li>Zero trust architecture</li>
+                            <li>Web application hardening</li>
+                            <li>Session based login handling</li>
+                            <li>API security setup & maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="card matrix-card">
+                        <h3 class="card-title">Testing & Development</h3>
+                        <ul class="mono-list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Backend & Frontend cohesion</li>
+                            <li>System evaluation & analysis</li>
+                            <li>Performance & integrity testing</li>
+                            <li>MITRE ATT&CK & CVE framework</li>
+                            <li>Regulation Compliance application</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects and Assignments -->
+            <section id="projects" class="content-section" style="max-width: 950px;">
+                <h2 class="section-title">Experience & Projects</h2>
+
+                <div class="project-portal">
+                    <!-- Master Column (Hover Triggers) -->
+                    <div class="project-titles">
+                        <div class="portal-link active" data-id="p-cloud">
+                            Cloud Infrastructure (GCP)
+                            <span class="mono-accent">February 2026</span>
+                        </div>
+                        <div class="portal-link" data-id="p-pass">
+                            Esports Password Manager
+                            <span class="mono-accent">December 2024</span>
+                        </div>
+                        <div class="portal-link" data-id="p-net">
+                            Key Cyber Endpoint Hardening
+                            <span class="mono-accent">Nov 2025 - Jan 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Detail Column (Content Display) -->
+                    <div class="project-preview glass-block"
+                        style="border: 1px solid var(--border-color); border-radius: 8px; backdrop-filter: blur(8px);">
+                        <!-- Project 1 -->
+                        <div id="p-cloud-content" class="portal-content active">
+                            <h3 class="card-title">Cloud Infrastructure & Secure Web Delivery</h3>
+                            <p style="font-size:0.9rem; margin-top:0.5rem; margin-bottom:0.8rem; line-height: 1.5;">The
+                                project required the architecture of a hardened web server environment within a cloud
+                                ecosystem to mitigate modern web-based attack vectors. The objective was to deploy a
+                                functional LAMP stack while ensuring superior performance and security by default,
+                                utilizing Google Cloud Platform (GCP) as the primary provider.</p>
+                            <p style="font-size:0.9rem; margin-bottom:0.8rem; line-height: 1.5;">My mandate involved the
+                                configuration of a scalable Compute Engine instance and the implementation of a
+                                multi-layer defense strategy. Key objectives included establishing Zero Trust network
+                                isolation, managing sensitive credentials through dedicated secrets services, and
+                                integrating continuous security scanning to identify and remediate package-level
+                                vulnerabilities.</p>
+                            <ul class="mono-list" style="font-size:0.85rem; line-height: 1.5;">
+                                <li><strong>Platform Provisioning & Hardening:</strong> Deployed an n2d-standard-2
+                                    instance (Ubuntu 25.04) enforcing Shielded VM features including Secure Boot, vTPM,
+                                    and Integrity Monitoring.</li>
+                                <li><strong>Identity & Access Management:</strong> Implemented Google Cloud
+                                    Identity-Aware Proxy (IAP) with mandatory Two-Factor Authentication (2FA) and OS
+                                    Login, effectively eliminating the risk of unauthorized administrative access via
+                                    credential theft.</li>
+                                <li><strong>Containerized Security:</strong> Orchestrated a MariaDB deployment within a
+                                    private Docker bridge network, utilizing tmpfs mounts and read-only volume mapping
+                                    to prevent secret persistence in image layers.</li>
+                                <li><strong>Edge Protection:</strong> Established a Cloudflare Tunnel for outbound-only
+                                    connectivity, with WAF custom rules for geographic blocking and rate-limiting to
+                                    mitigate automated DDoS.</li>
+                                <li><strong>Vulnerability Orchestration:</strong> Integrated the Trivy scanning engine
+                                    to audit against CVE standards, successfully performing image slimming to remediate
+                                    100% of actionable vulnerabilities.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div id="p-pass-content" class="portal-content">
+                            <h3 class="card-title">Secure-By-Design Esports Password Manager (Python)</h3>
+                            <p style="font-size:0.9rem; margin-top:0.5rem; margin-bottom:0.8rem; line-height: 1.5;">
+                                Engineered a secure-by-design credential management PoC for the esports sector during my
+                                second year at the University of South Wales. Directed the implementation of a robust
+                                framework for password complexity validation, cryptographic storage, and Multi-Factor
+                                Authentication (MFA) to mitigate credential harvesting risks.</p>
+                            <ul class="mono-list" style="font-size:0.85rem; line-height: 1.5;">
+                                <li>Developed a modular Python 3.9 codebase utilizing bcrypt for adaptive hashing and
+                                    Fernet (AES) for symmetric encryption.</li>
+                                <li>Engineered a TOTP-based MFA using pyotp, migrating from insecure SMTP protocols, and
+                                    utilized a CLI to minimize the software's attack surface.</li>
+                            </ul>
+                            <p style="font-size:0.9rem; margin-top:1rem; line-height: 1.5;">Validated system integrity
+                                through 22 rigorous test cases, successfully documenting specific
+                                vulnerabilities—including SQL injection vectors and logic errors—to inform future
+                                remediation strategies.</p>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div id="p-net-content" class="portal-content">
+                            <h3 class="card-title">Network Infrastructure & Secure Endpoint Hardening</h3>
+                            <p style="font-size:0.9rem; margin-top:0.5rem; margin-bottom:0.8rem; line-height: 1.5;">The
+                                project necessitated the architecture and implementation of a secure, resilient network
+                                infrastructure for Key Cyber. Operating within a four-person team (Group 8), the
+                                objective was to move from a conceptual star topology to a functional, audited prototype
+                                that could withstand modern cyber threats.</p>
+                            <ul class="mono-list" style="font-size:0.85rem; line-height: 1.5;">
+                                <li><strong>Platform Deployment:</strong> Provisioned a synchronized Windows Server 2022
+                                    instance to serve as the organizational backbone alongside a Windows 11 workstation.
+                                </li>
+                                <li><strong>Network Automation:</strong> Implemented KEA DHCP managing dynamic IP
+                                    leasing and integrated devices natively under keycyber.co.uk with external 8.8.8.8
+                                    resolution.</li>
+                                <li><strong>Security Tooling:</strong> Installed and configured pfBlockerNG for
+                                    DNS-based filtering and Snort as a NIDS, laying groundwork for Splunk SIEM
+                                    architecture.</li>
+                                <li><strong>Gateway Hardening:</strong> Mandated HTTPS and HSTS protocols via FreeBSD
+                                    pfSense routing and instantly rotated default administrative credentials using a
+                                    multi-salt standard.</li>
+                                <li><strong>Vulnerability Management:</strong> Conducted comprehensive security auditing
+                                    using Tenable Nessus Essentials, identifying and documenting critical configuration
+                                    weaknesses.</li>
+                            </ul>
+                            <p style="font-size:0.9rem; margin-top:1rem; line-height: 1.5;">Delivered a fully
+                                operational network prototype with verified stateful packet inspection and secure
+                                filtering, establishing a proactive strategic roadmap for "Least Privilege"
+                                operationalization.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Networking Events -->
+            <section id="events" class="content-section">
+                <h2 class="section-title">Upcoming Networking Events</h2>
+                <div class="timeline">
+                    <div class="timeline-item card hover-fx">
+                        <div class="timeline-date mono-accent">22-25 April, 2026</div>
+                        <div class="timeline-content">
+                            <h3>SQLBits | ICC Wales</h3>
+                            <p>SQLBits is one of the world's leading conferences for data practitioners. Delegates can
+                                expect four outstanding days of world-class sessions, relaxed networking and a
+                                completely unique expo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item card hover-fx">
+                        <div class="timeline-date mono-accent">28 April, 2026</div>
+                        <div class="timeline-content">
+                            <h3>AI & Cyber Security Decoded</h3>
+                            <p>Decoded: AI & Cyber Security for Small Businesses is a practical, accessible session
+                                designed for small business operators looking to leverage AI securely.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="mb-4">I'm currently looking for internships and entry-level opportunities in SOC or
+                    Vulnerability Management.</p>
+                <div class="contact-card card hover-fx inline-block" style="margin-bottom: 2rem;">
+                    <p class="mono-accent mb-2">Initialize Handshake:</p>
+                    <a href="mailto:WORK-RESUME@PRTC.MOZMAIL.COM" class="btn sharp-btn"
+                        style="text-transform: uppercase;">WORK-RESUME@PRTC.MOZMAIL.COM</a>
+                </div>
+
+                <h3 class="mb-2" style="font-size: 1.1rem; color: var(--text-main);">Professional Networks</h3>
+                <div class="link-tree">
+                    <a href="https://github.com/Benjamin-Ingleby-Oddy" target="_blank"
+                        class="btn outline-btn sharp-btn">GitHub</a>
+                    <a href="https://www.linkedin.com/in/benjamin-ingleby-oddy/" target="_blank"
+                        class="btn outline-btn sharp-btn">LinkedIn</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
